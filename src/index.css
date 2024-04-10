@@ -1,0 +1,177 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.app {
+  display: grid;
+  width: 80%;
+  height: auto;
+  grid-template-columns: auto 50%;
+  grid-template-rows: auto auto;
+  /* border: 1px solid red; */
+  grid-template-areas:
+    "a  b"
+    "c b";
+  gap: 35px;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 40px;
+}
+/* .app > div {
+  background-color: cyan; 
+   border: 1px solid red; 
+   padding: 30px;
+}  */
+
+.app > div:nth-child(1) {
+  grid-area: a;
+}
+.app > div:nth-child(2) {
+  grid-area: b;
+}
+.app > div:nth-child(3) {
+  grid-area: c;
+}
+
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid blue; */
+  gap: 5px;
+
+  margin: auto;
+}
+
+.friend {
+  width: 90%;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  box-shadow: rgba(8, 9, 10, 0.2) 0px 8px 24px;
+  /* border: 1px solid green; */
+  align-items: center;
+}
+
+.selected {
+  background-color: #fff4e6;
+}
+
+.friend > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+.friend h3,
+.friend p {
+  /* background-color: antiquewhite; */
+  margin: 0px;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+
+button {
+  color: black;
+  background-color: #ffa94d;
+  border: none;
+  /* width: 40px;
+  height:20px; */
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+.form-bill {
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid blue; */
+  border-radius: 10px;
+
+  background-color: #fff4e6;
+}
+
+.form-bill > h2 {
+  text-transform: uppercase;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 8px;
+}
+form > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  font-size: large;
+  box-sizing: border-box;
+}
+
+form > div:nth-child(5) {
+  justify-content: flex-end;
+}
+.split-button {
+  width: 30%;
+  height: 90%;
+}
+
+input,
+select {
+  height: 90%;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.friend:hover {
+  background-color: #fff4e6;
+}
+
+.form-addfriend {
+  margin: auto;
+  background-color: #fff4e6;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form-addfriend > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-addfriend button,
+.form-addfriend input {
+  width: 40%;
+}
+
+.addfriend-button {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  /* border: 1px solid; */
+  margin: auto;
+  padding: 5px 10px;
+}
